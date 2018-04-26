@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import RaisedButton from 'material-ui/RaisedButton';
 import './App.css';
 
 class App extends Component {
@@ -13,6 +15,10 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
+
+        {<MuiThemeProvider>
+          <RaisedButton label="Demo Material UI Button" />
+        </MuiThemeProvider> }
       </div>
     );
   }
